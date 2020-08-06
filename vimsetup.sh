@@ -3,7 +3,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 echo "making colors directory"
 mkdir ~/.vim/colors
 echo "installing monokai theme"
-curl https://raw.githubusercontent.com/sickill/vim-monokai/master/colors/monokai.vim > ~/.vim/colors/monokai.vim
+curl https://raw.githubusercontent.com/crusoexia/vim-monokai/master/colors/monokai.vim > ~/.vim/colors/monokai.vim
 echo "configuring .vimrc..."
 printf "set nocompatible              \" be iMproved, required\n\
 filetype off                  \" required\n\
@@ -36,6 +36,7 @@ Plugin 'VundleVim/Vundle.vim'\n\
 \n\
 Plugin 'tpope/vim-fugitive'\n\
 Plugin 'Chiel92/vim-autoformat'\n\
+Plugin 'preservim/nerdtree'\n\
 \" All of your Plugins must be added before the following line\n\
 call vundle#end()            \" required\n\
 filetype plugin indent on    \" required\n\
@@ -47,6 +48,7 @@ syntax enable\n\
 colorscheme monokai\n\
 set tabstop=2\n\
 set cursorline\n\
+map <C-n> :NERDTreeToggle<CR>\n\
 set title\n" > ~/.vimrc
 echo "installing plugins"
 vim +PluginInstall +qall
