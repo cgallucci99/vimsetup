@@ -42,7 +42,6 @@ filetype plugin indent on    \" required\n\
 \" To ignore plugin indent changes, instead use:\n\
 \"filetype plugin on\n\
 \" Put your non-Plugin stuff after this line\n\
-let g:indentLine_char_list = ['|', '¦', '┆', '┊']\n\
 set number\n\
 syntax enable\n\
 colorscheme monokai\n\
