@@ -52,6 +52,8 @@ set shiftwidth=2\n\
 set expandtab\n\
 set cursorline\n\
 map <C-n> :NERDTreeToggle<CR>\n\
+imap ff <Esc>\n\
+vmap ff <Esc>\n\
 set title\n" > ~/.vimrc
 echo "installing plugins"
 vim +PluginInstall +qall
