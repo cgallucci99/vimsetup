@@ -47,6 +47,8 @@ set number\n\
 syntax enable\n\
 colorscheme monokai\n\
 set tabstop=2\n\
+set shiftwidth=2\n\
+set expandtab\n\
 set cursorline\n\
 map <C-n> :NERDTreeToggle<CR>\n\
 set title\n" > ~/.vimrc
