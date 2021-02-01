@@ -38,6 +38,7 @@ Plugin 'VundleVim/Vundle.vim'\n\
 Plugin 'tpope/vim-fugitive'\n\
 Plugin 'Chiel92/vim-autoformat'\n\
 Plugin 'preservim/nerdtree'\n\
+Plugin 'mattn/emmet-vim'\n\
 \" All of your Plugins must be added before the following line\n\
 call vundle#end()            \" required\n\
 filetype plugin indent on    \" required\n\
@@ -54,6 +55,8 @@ set cursorline\n\
 map <C-n> :NERDTreeToggle<CR>\n\
 imap ff <Esc>\n\
 vmap ff <Esc>\n\
+let g:user_emmet_leader_key=','\n\
+set foldmethod=indent\n\
 set title\n" > ~/.vimrc
 echo "installing plugins"
 vim +PluginInstall +qall
